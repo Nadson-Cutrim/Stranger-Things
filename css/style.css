@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Benguiat";
+    src: url(fonts/Benguiat\ Bold.ttf);
+}
+
+body {
+  background-color: #0c0102;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: "Poppins";
+}
+
+button{
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+}
+
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 4vw;
+  position: absolute;
+  z-index: 9;
+}
+
+.hero {
+  background-image: url("/assets/img/hero.webp");
+  background-position: 50% 0%;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7vw 7vw 7vw;
+
+  .esquerda, .direita{
+    width: 30%;
+  }
+
+  .esquerda {
+    h3{
+        font-size: 24px;
+        font-weight: 500;
+        letter-spacing: 4px;
+    }
+    h1{
+        font-size: 3.7vw;
+        font-family: "Benguiat";
+    }
+  }
+
+  .direita{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    p{
+        font-size: 2vw;
+        margin-bottom: 32px;
+        text-align: end;
+    }
+
+    button{
+        background-color: transparent;
+        color: white;
+        font-size: 16px;
+        display: flex;
+        gap: 12px;
+        border: none;
+        outline: none;
+        padding: 16px 0px;
+        border-bottom: 1px solid white;
+    }
+  }
+}
