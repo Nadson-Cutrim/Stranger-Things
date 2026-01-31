@@ -34,3 +34,17 @@ gsap.from(".card",{
     
     }
 })
+
+gsap.from(".secaoObrigado ul li",{
+    opacity: 0,
+    x: 40,
+    filter: "blur(10px)",
+    stagger: .3,
+    scrollTrigger: {
+        trigger: ".secaoObrigado ul",
+        scrub: true,
+        start: "0 80%",
+        end: "100% 55%",
+     
+}
+})
