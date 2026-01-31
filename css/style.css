@@ -13,6 +13,7 @@ body {
   background-color: #0c0102;
   color: rgba(255, 255, 255, 0.9);
   font-family: "Poppins";
+  overflow-x: hidden;
 }
 
  h2{
@@ -79,7 +80,7 @@ padding: 7vw;
     }
     h1{
         font-size: 3.7vw;
-        font-family: "Benguiat";
+        font-family: 'Benguiat';
     }
   }
 
@@ -230,6 +231,14 @@ footer{
       font-size: 12vw;
       font-family: "Benguiat";
       mix-blend-mode: color-dodge;
+      padding-left: 8vw;
+      animation: textoInfinito 8s linear infinite;
     }
+  }
+}
+
+@keyframes textoInfinito{
+  100% {
+    transform: translateX(-100%);
   }
 }
