@@ -7,6 +7,9 @@ ScrollSmoother.create({
 	effects: true
 });
 
+
+
+function animarPagina(){
 gsap.from("picture:nth-child(2)",{
     opacity: 0,
     duration: 1
@@ -86,9 +89,12 @@ const tSpliter = SplitText.create(texSpliter,{
 }
 });
 
+}
+
 //Preloader Animation
 const tl = gsap.timeline({
     onComplete(){
+        animarPagina();
         gsap.to("#preloader",{
            opacity: 0,
            onComplete(){
