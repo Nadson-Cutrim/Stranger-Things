@@ -74,7 +74,7 @@ padding: 7vw;
   .esquerda {
     h3{
         font-size: 24px;
-        font-weight: 500;
+        font-weight: 400;
         letter-spacing: 4px;
     }
     h1{
@@ -164,5 +164,72 @@ padding: 7vw;
     display: flex;
     width: 100%;
     justify-content: space-between;
+  }
+}
+
+footer{
+  background-image: url(/assets/img/bg-footer.webp);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .conteudoFooter{
+    display: flex;
+    width: 100%;
+    padding: 7vw;
+  }
+  .logoFooter{
+    h3{
+        font-size: 24px;
+        font-weight: 500;
+        letter-spacing: 4px;
+    }
+    h2{
+        font-size: 3.7vw;
+        font-family: "Benguiat";
+    }
+  }
+  .secoesFooter{
+    display: flex;
+    flex: 1;
+    justify-content: end;
+    gap: 6%;
+    align-items: end;
+
+    h3{
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+
+    .social{
+
+    ul{
+      display: flex; 
+      gap: 16px;
+    }
+  }
+  }
+
+  .logotiposFooter{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4vw;
+  }
+
+  .textoInfinito{
+    width: max-content;
+    display: flex;
+
+    h3{
+      color: rgb(191, 191, 191);
+      font-size: 12vw;
+      font-family: "Benguiat";
+      mix-blend-mode: color-dodge;
+    }
   }
 }
