@@ -59,19 +59,49 @@ padding: 7vw;
   background-image: url("/assets/img/bg-monstro.webp");
   background-position: center;
   background-size: cover;
+  z-index: 2;
+  position: relative;
+  background-color:#0c0102;
 }
 
 .hero {
-  background-image: url("/assets/img/hero.webp");
   background-position: 50% 0%;
   background-size: cover;
   height: 100vh;
   align-items: center;
   justify-content: space-between;
   padding: 0 7vw 7vw 7vw;
+  position: relative;
+
+  picture{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+    }
+  }
+
+  .bMonstro{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+  }
 
   .esquerda, .direita{
     width: 30%;
+    z-index: 3;
   }
 
   .esquerda {
@@ -99,9 +129,19 @@ padding: 7vw;
     
   }
 }
-
+.hero:before{
+  content: "";
+  background:linear-gradient(180deg, rgba(12, 1, 2, 0.00) 0%, #0c0102 100%);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index:2;
+}
 .secaoCidade{
   flex-direction: column;
+ position: relative;
  
   .titulo{
     display: flex;

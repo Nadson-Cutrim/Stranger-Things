@@ -10,7 +10,10 @@
     <title>Stranger Things</title>
   </head>
   <body>
-    <!-- CABECALHO -->
+    <!--Div scrool Smoother-->
+    <div class="" id="smooth-wrapper">
+      <div id="smooth-content">
+ <!-- CABECALHO -->
     <header>
       <h2>NC.</h2>
       <img src="assets/icon/netflix-logo.svg" alt="" />
@@ -20,6 +23,14 @@
     <main>
       <!-- SECAO HERO -->
       <section class="hero">
+        <picture data-speed=".6">
+          <source media="(max-width: 600px)" srcset="/assets/img/bg_hero_Monstro_mobile.webp"/>
+          <img src="assets/img/bg_hero_Monstro.webp"  alt=""/>
+        </picture>
+         <picture>
+          <source media="(max-width: 600px)" srcset="/assets/img/bg_hero_personagens_mobile.webp"/>
+          <img src="assets/img/bg_hero_personagens.webp"  alt=""/>
+        </picture>
         <div class="esquerda">
           <h3>THE EXPERIENCE</h3>
           <h1>STRANGER THINGS</h1>
@@ -110,17 +121,7 @@
           <li>Sidney</li>
           <li>Sidney</li>
           <li>Sidney</li>
-          <li>Sidney</li>
-          <li>Sidney</li>
-          <li>Sidney</li>
-          <li>Sidney</li>
-          <li>Sidney</li>
-          <li>Sidney</li>
-          <li>Sidney</li>
-          <li>Sidney</li>
-          <li>Sidney</li>
-          <li>Sidney</li>
-          <li>Sidney</li>
+         
         </ul>
       </section>
     </main>
@@ -168,5 +169,15 @@
         <h3>THE EXPERIENCE</h3>
       </div>
     </footer>
+
+      </div>
+    </div>
+   
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollSmoother.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/SplitText.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
