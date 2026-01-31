@@ -35,6 +35,7 @@ gsap.from(".card",{
     }
 })
 
+//ANIMACAO TITULO CIDADES
 gsap.from(".secaoObrigado ul li",{
     opacity: 0,
     x: 40,
@@ -47,4 +48,18 @@ gsap.from(".secaoObrigado ul li",{
         end: "100% 55%",
      
 }
+})
+
+
+//ANIMAÇAO FOOTER
+gsap.from("footer",{
+    y: "-30%",
+    immediateRender:false,
+    scrollTrigger: {
+        trigger: "footer",
+        scrub: true,
+        start: "0 100%",
+        end: "100% 100%",
+        invalidateOnRefresh:true,
+    }
 })
