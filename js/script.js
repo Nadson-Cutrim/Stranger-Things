@@ -20,3 +20,17 @@ gsap.from("picture:nth-child(2)",{
     y: 200,
     duration: 1
 })
+
+//ANIMACAO TITULO CIDADES
+gsap.from(".card",{
+    opacity: 0,
+    filter: "blur(10px)",
+    stagger: .3,
+    scrollTrigger: {
+        trigger: ".cards",
+        start: "0 75%",
+        end: "100% 70%",
+        scrub: true,
+    
+    }
+})
