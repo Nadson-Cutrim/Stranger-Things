@@ -8,12 +8,14 @@
     font-family: "Benguiat";
     src: url(fonts/Benguiat\ Bold.ttf);
 }
-
+html,body{
+  overflow-x: hidden;
+}
 body {
   background-color: #0c0102;
   color: rgba(255, 255, 255, 0.9);
   font-family: "Poppins";
-  overflow-x: hidden;
+  
 }
 
  h2{
@@ -241,4 +243,151 @@ footer{
   100% {
     transform: translateX(-100%);
   }
+}
+
+
+@media(max-width: 1500px){
+  .secaoCidade{
+    padding: 4vw;
+  }
+}
+
+@media(max-width: 1400px){
+ .secaoCidade .cards .card{
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+
+  }
+}
+
+@media(max-width: 600px){
+  section{
+    padding: 4vw;
+  }
+  h2{
+    font-size: 6vw;
+  }
+  header{
+    h2{
+      font-size: 20px;
+    }
+  }
+  .hero{
+    flex-direction: column;
+    padding: 28% 4vw 0;
+
+    .esquerda, .direita{
+      width: 100%;
+    }
+
+    .esquerda{
+      h3,h1{
+      text-align: center;
+      }
+      h1{
+        font-size: 12vw;
+      }
+    }
+      .direita{
+        align-items: start;
+        p{
+          font-size: 5.5vw;
+          text-align: start;
+          margin-bottom: 14px;
+        }
+      }
+    }
+  .secaoCidade{
+    margin-top: 80px;
+    button{
+      display: none;
+    }
+
+    .cards{
+      margin-top: 20px;
+      flex-direction: column;
+      gap: 20px;
+      .card{
+        width: 100%;
+      }
+    }
+
+  }
+.secaoDepoimentos{
+  .logotipos{
+   img:nth-child(1), img:nth-child(3){
+    width: 20%;
+   }
+   img:nth-child(2){
+    width: 40%;
+   }
+  }
+
+  .depoimentos{
+  flex-direction: column;
+  gap: 48px;
+  .depoimento{
+    width: 100%;
+  }
+}
+}
+.secaoObrigado{
+  margin: 40px 0 60px;
+  h2{
+    text-align: center;
+  }
+  ul{
+    width: max-content;
+    gap: 32px;
+  }
+}
+
+footer{
+  padding-top:40px ;
+  .conteudoFooter{
+    padding: 4vw;
+    flex-direction: column;
+
+    .logoFooter{
+      width: 100%; 
+
+      h2,h3{
+        text-align: center;
+      }
+      h2{
+        font-size: 12vw;
+      }
+    }
+    .secoesFooter{
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: start;
+      .social{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 40px 0 32px;
+      }
+      .institucional{
+        width: 40%;
+      }
+      .parceiro{
+        width: 50%;
+
+        img{
+          width: 100%;
+        }
+      }
+  }
+}
+.logotiposFooter{
+  margin-top: 40px;
+}
+.textoInfinito h3{
+  font-size: 20vw;
+}
+}
 }
