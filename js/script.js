@@ -1,6 +1,7 @@
 //SCROLL SUAVE COM GSAP
 gsap.registerPlugin(ScrollTrigger,ScrollSmoother,SplitText);
 
+
 ScrollSmoother.create({
 	smooth: 1.5,
 	effects: true
@@ -62,4 +63,50 @@ gsap.from("footer",{
         end: "100% 100%",
         invalidateOnRefresh:true,
     }
+})
+
+//ANIMAÇÃO DAS LETRAS
+const grupoSplit = document.querySelectorAll(".textSplit");
+
+grupoSplit.forEach((texSpliter)=>{{
+const tSpliter = SplitText.create(texSpliter,{
+    type: "lines,words, chars",
+    mask: "lines"
+})
+
+    gsap.from(tSpliter.chars,{
+        y: 40,
+        opacity: 0,
+        duration: 0.3,
+        stagger: 0.03,
+        scrollTrigger: {
+            trigger: texSpliter
+        }
+    })
+}
+});
+
+//Preloader Animation
+const tl = gsap.timeline({
+    onComplete(){
+        gsap.to("#preloader",{
+           opacity: 0,
+           onComplete(){
+            gsap.to("#preloader",{
+                display: "none"
+            })
+           }  
+        })
+    }
+});
+
+tl.to("#preloader path",{
+    strokeDashoffset: 0,
+    duration: 1
+})
+
+tl.to("#preloader path",{
+    fill: " rgb(168, 19, 19)",
+    duration: .5,
+    strokeDashoffset: 0
 })
