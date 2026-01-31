@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: "Benguiat";
-  src: url(fonts/Benguiat\ Bold.ttf);
+  src: url(/assets/fonts/Benguiat\ Bold.ttf) format("truetype");
 }
 
 html,
