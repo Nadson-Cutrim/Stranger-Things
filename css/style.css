@@ -125,3 +125,24 @@ padding: 7vw;
     }
   }
 }
+
+.secaoDepoimentos{
+  flex-direction: column;
+
+
+  .logotipos{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+  }
+
+  .depoimentos{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    
+    .depoimento{
+      width: 31%;
+    }
+  }
+}
