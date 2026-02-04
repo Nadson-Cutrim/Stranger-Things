@@ -5,15 +5,15 @@ gsap.registerPlugin(ScrollTrigger,ScrollSmoother,SplitText);
 const audioBtn = document.getElementById("audioControl");
 let isPlaying = false;
 
-audioBtn.addEventListener("click", (e) => {
+audioBtn.addEventListener('click', (e) => {
 e.stopPropagation();
 
     if(audio.paused){
         audio.play();
-        audioBtn.textContent = "🔊";
+        audioBtn.innerHTML = '<i class="fa-solid fa-volume-high"></i>';
     }else{
         audio.pause();
-        audioBtn.textContent = "🔇";
+        audioBtn.innerHTML = '<i class="fa-solid fa-volume-xmark"></i>';
     }
 });
 
