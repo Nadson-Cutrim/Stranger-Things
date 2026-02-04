@@ -1,5 +1,37 @@
-//SCROLL SUAVE COM GSAP
+
 gsap.registerPlugin(ScrollTrigger,ScrollSmoother,SplitText);
+
+
+const audioBtn = document.getElementById("audioControl");
+let isPlaying = false;
+
+audioBtn.addEventListener("click", (e) => {
+e.stopPropagation();
+
+    if(audio.paused){
+        audio.play();
+        audioBtn.textContent = "🔊";
+    }else{
+        audio.pause();
+        audioBtn.textContent = "🔇";
+    }
+});
+
+const audio = document.getElementById("bgMusic");
+ audio.volume = 0.2;
+
+ function playAudio(){
+    audio.play().then(() => {
+        document.removeEventListener('click', playAudio);
+        console.log('Áudio reproduzido com sucesso.');
+      }).catch(error => {
+        console.error('Erro ao reproduzir o áudio:', error);
+      
+    });
+ }
+
+playAudio();
+document.addEventListener('click', playAudio);
 
 
 ScrollSmoother.create({
@@ -25,7 +57,7 @@ gsap.from("picture:nth-child(2)",{
     duration: 1
 })
 
-//ANIMACAO TITULO CIDADES
+
 gsap.from(".card",{
     opacity: 0,
     filter: "blur(10px)",
@@ -39,7 +71,7 @@ gsap.from(".card",{
     }
 })
 
-//ANIMACAO TITULO CIDADES
+
 gsap.from(".secaoObrigado ul li",{
     opacity: 0,
     x: 40,
@@ -55,7 +87,7 @@ gsap.from(".secaoObrigado ul li",{
 })
 
 
-//ANIMAÇAO FOOTER
+
 gsap.from("footer",{
     y: "-30%",
     immediateRender:false,
@@ -68,7 +100,7 @@ gsap.from("footer",{
     }
 })
 
-//ANIMAÇÃO DAS LETRAS
+
 const grupoSplit = document.querySelectorAll(".textSplit");
 
 grupoSplit.forEach((texSpliter)=>{{
@@ -91,7 +123,7 @@ const tSpliter = SplitText.create(texSpliter,{
 
 }
 
-//Preloader Animation
+
 const tl = gsap.timeline({
     onComplete(){
         animarPagina();

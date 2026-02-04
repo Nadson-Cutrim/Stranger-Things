@@ -10,32 +10,32 @@
     <title>Stranger Things</title>
   </head>
   <body>
-    <!--Div scrool Smoother-->
     <div class="" id="smooth-wrapper">
       <div id="smooth-content">
-        <!-- CABECALHO -->
         <header>
           <h2>NC.</h2>
-          <img src="assets/icon/netflix-logo.svg" alt="" />
+          <a href="https://www.netflix.com/" target="blank"
+            ><img src="assets/icon/netflix-logo.svg" alt="logo netflix"
+          /></a>
+          <button id="audioControl">🔈</button>
         </header>
+        
 
-        <!-- SECOES PRINCIPAIS -->
         <main>
-          <!-- SECAO HERO -->
           <section class="hero">
             <picture data-speed=".6">
               <source
                 media="(max-width: 600px)"
                 srcset="/assets/img/bg_hero_Monstro_mobile.webp"
               />
-              <img src="assets/img/bg_hero_Monstro.webp" alt="" />
+              <img src="assets/img/bg_hero_Monstro.webp" alt="demogorgon" />
             </picture>
             <picture>
               <source
                 media="(max-width: 600px)"
                 srcset="/assets/img/bg_hero_personagens_mobile.webp"
               />
-              <img src="assets/img/bg_hero_personagens.webp" alt="" />
+              <img src="assets/img/bg_hero_personagens.webp" alt="personagens" />
             </picture>
             <div class="esquerda">
               <h3>THE EXPERIENCE</h3>
@@ -52,7 +52,6 @@
             </div>
           </section>
           <div class="bgMonstro">
-            <!-- SECAO 2 -->
             <section class="secaoCidade">
               <div class="titulo">
                 <h2 class="textSplit">ESCOLHA SUA CIDADE</h2>
@@ -77,14 +76,12 @@
               </div>
             </section>
 
-            <!-- SECAO 3 -->
             <section class="secaoDepoimentos">
               <div class="logotipos">
                 <a href="https://www.netflix.com/" target="blank"
                   ><img
                     src="assets/icon/netflix-logo.svg"
                     alt="logo netflix"
-                    longde
                 /></a>
                 <a href="https://www.clios.com/" target="blank"
                   ><img src="assets/icon/clio-logo.svg" alt="logo clio"
@@ -95,7 +92,7 @@
               </div>
               <div class="depoimentos">
                 <div class="depoimento">
-                  <img src="assets/img/img-dep1.webp" alt="" />
+                  <img src="assets/img/img-dep1.webp" alt="Logo NBC" />
                   <p>
                     "Guests are immersed into an original "Stranger Things"
                     storyline...[it] combines the special effects of a 3D
@@ -103,7 +100,7 @@
                   </p>
                 </div>
                 <div class="depoimento">
-                  <img src="assets/img/img-dep2.webp" alt="" />
+                  <img src="assets/img/img-dep2.webp" alt="logo canal fox" />
                   <p>
                     "Guests are immersed into an original "Stranger Things"
                     storyline...[it] combines the special effects of a 3D
@@ -111,7 +108,7 @@
                   </p>
                 </div>
                 <div class="depoimento">
-                  <img src="assets/img/img-dep3.webp" alt="" />
+                  <img src="assets/img/img-dep3.webp" alt="São Francisco" />
                   <p>
                     "Guests are immersed into an original "Stranger Things"
                     storyline...[it] combines the special effects of a 3D
@@ -121,7 +118,7 @@
               </div>
             </section>
           </div>
-          <!-- SECAO 4 -->
+
           <section class="secaoObrigado">
             <h2 class="textSplit">
               OBRIGADO POR SE JUNTAR A NÓS NESTA AVENTURA EM:
@@ -144,7 +141,6 @@
           </section>
         </main>
 
-        <!-- FOOTER -->
         <footer>
           <div class="conteudoFooter">
             <div class="logoFooter">
@@ -155,9 +151,9 @@
               <div class="social">
                 <h3>REDES SOCIAIS</h3>
                 <ul>
-                  <li><img src="assets/icon/footer-facebook.svg" alt="" /></li>
-                  <li><img src="assets/icon/footer-instagram.svg" alt="" /></li>
-                  <li><img src="assets/icon/footer-twitter.svg" alt="" /></li>
+                  <li> <a href="https://www.facebook.com/nadson.cutrim.73" target="_blank" rel="noopener"><img src="assets/icon/footer-facebook.svg" alt="logo-facebook"  /></a></li>
+                  <li><a href="https://www.instagram.com/nadson_ct/" target="_blank" rel="noopener"><img src="assets/icon/footer-instagram.svg" alt="logo-instagram"  /></a></li>
+                  <li><a href="https://x.com" target="_blank" rel="noopener"><img src="assets/icon/footer-twitter.svg" alt="logo-twitter"  /></a></li>
                 </ul>
               </div>
               <div class="parceiro">
@@ -220,6 +216,11 @@
         />
       </svg>
     </div>
+
+  <audio id="bgMusic" loop>
+    <source src="assets/audio/Stranger Things.mp3" type="audio/mpeg">
+    Seu navegador não suporta o elemento de áudio.
+  </audio>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
