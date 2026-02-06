@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: "Benguiat";
-  src: url(/assets/fonts/Benguiat\ Bold.ttf) format("truetype");
+  src: url(../assets/fonts/Benguiat\ Bold.ttf) format("truetype");
 }
 
 html,
@@ -89,7 +89,7 @@ section {
 
 
 .bgMonstro {
-  background-image: url("/assets/img/bg-monstro.webp");
+  background-image: url("../assets/img/bg-monstro.webp");
   background-position: center;
   background-size: cover;
   z-index: 2;
@@ -195,7 +195,7 @@ section {
     justify-content: space-between;
 
     .card {
-      background-image: url("/assets/img/card1.webp");
+      background-image: url("../assets/img/card1.webp");
       width: 32%;
       aspect-ratio: 16/9;
       background-size: cover;
@@ -207,11 +207,11 @@ section {
     }
 
     .card:nth-child(2) {
-      background-image: url("/assets/img/card2.webp");
+      background-image: url("../assets/img/card2.webp");
     }
 
     .card:nth-child(3) {
-      background-image: url("/assets/img/card3.webp");
+      background-image: url("../assets/img/card3.webp");
     }
   }
 }
@@ -256,7 +256,7 @@ section {
 }
 
 footer {
-  background-image: url(/assets/img/bg-footer.webp);
+  background-image: url(../assets/img/bg-footer.webp);
   background-position: center;
   background-size: cover;
   width: 100%;
