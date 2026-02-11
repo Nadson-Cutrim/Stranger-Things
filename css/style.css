@@ -40,20 +40,20 @@ button {
   border-bottom: 1px solid white;
 }
 
-#preloader{
-  width:100%; 
-  height:100vh;
+#preloader {
+  width: 100%;
+  height: 100vh;
   background-color: #0c0102;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  position:fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
 
-  svg{
-    width:40vw;
-    height:auto;
+  svg {
+    width: 40vw;
+    height: auto;
 
-    path{
+    path {
       fill: rgb(168, 19, 19, 0.364);
       stroke: rgb(168, 19, 19);
       stroke-dasharray: 1200;
@@ -76,8 +76,8 @@ header {
   position: absolute;
   z-index: 9;
 
-  #audioControl{
-      border-bottom: none;
+  #audioControl {
+    border-bottom: none;
   }
 }
 
@@ -348,8 +348,37 @@ footer {
 
   }
 }
+@media (max-width: 768px) {
 
-@media(max-width: 600px) {
+  .secaoObrigado {
+    overflow: hidden;
+  }
+
+  .secaoObrigado ul {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 0 20px;
+
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .secaoObrigado ul::-webkit-scrollbar {
+    display: none; /* Chrome */
+  }
+
+  .secaoObrigado ul li {
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+  }
+
+}
+@media(max-width: 650px) {
   section {
     padding: 4vw;
   }
@@ -416,18 +445,6 @@ footer {
   }
 
   .secaoDepoimentos {
-    .logotipos {
-
-      img:nth-child(1),
-      img:nth-child(3) {
-        width: 20%;
-      }
-
-      img:nth-child(2) {
-        width: 40%;
-      }
-    }
-
     .depoimentos {
       flex-direction: column;
       gap: 48px;
@@ -438,6 +455,10 @@ footer {
     }
   }
 
+  .logotipos img {
+    max-width: 25vw;
+  }
+
   .secaoObrigado {
     margin: 40px 0 60px;
 
@@ -446,8 +467,14 @@ footer {
     }
 
     ul {
-      width: max-content;
+
+     
       gap: 32px;
+      display: flex;
+    }
+    li{
+    width: max-content;
+    text-align: center;
     }
   }
 
@@ -508,3 +535,4 @@ footer {
     }
   }
 }
+
