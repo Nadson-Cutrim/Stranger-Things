@@ -363,11 +363,11 @@ footer {
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
 
-    scrollbar-width: none; /* Firefox */
+    scrollbar-width: none;
   }
 
   .secaoObrigado ul::-webkit-scrollbar {
-    display: none; /* Chrome */
+    display: none;
   }
 
   .secaoObrigado ul li {
