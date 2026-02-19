@@ -84,7 +84,6 @@ O ícone no cabeçalho alterna dinamicamente entre Som Ligado e Som Desligado.
 
 ```
 git clone https://github.com/Nadson-Cutrim/Stranger-Things.git
-Acesse a pasta do projeto:
 ```
 **2. Acesse o diretório do projeto:**
 ```
