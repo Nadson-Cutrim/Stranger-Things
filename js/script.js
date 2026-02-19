@@ -74,21 +74,20 @@ function animarPagina() {
     scrollTrigger: {
       trigger: ".secaoObrigado ul",
       scrub: true,
-      start: "0 80%",
+      start: "0 75%",
       end: "100% 55%",
     },
   });
 
   if (window.innerWidth > 768) {
     gsap.to(".secaoObrigado ul", {
-      x: -50,
+      x: -30,
       ease: "none",
       scrollTrigger: {
-        trigger: ".secaoObrigado",
-        markers: true,
+        trigger: ".secaoObrigado", 
         scrub: true,
-        start: "0 80%",
-        end: "100% 55%",
+        start: "0 90%",
+        end: "100% 60%",
         invalidateOnRefresh: true,
       },
     });
