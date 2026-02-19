@@ -107,4 +107,4 @@ Para que o ScrollSmoother do GSAP funcione perfeitamente, recomenda-se utilizar 
 
 **Desenvolvedor:** *Nadson Rodrigues Cutrim Junior.*
 
-Feito com 🩸, suor e código por Nadson Cutrim 🚀
+<p align="right">Feito com 🩸, suor e código por Nadson Cutrim 🚀</p>
