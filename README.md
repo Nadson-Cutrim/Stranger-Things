@@ -102,9 +102,8 @@ Para que o ScrollSmoother do GSAP funcione perfeitamente, recomenda-se utilizar 
 ## 🎨 Créditos e Recursos
 
 **Design:** Inspirado na identidade visual de Stranger Things (Netflix).
-
-**Biblioteca** GSAP.
-
+**Biblioteca:** GSAP.
 **Desenvolvedor:** *Nadson Rodrigues Cutrim Junior.*
-
+<br>
+<br>
 <p align="right">Feito com 🩸, suor e código por Nadson Cutrim 🚀</p>
